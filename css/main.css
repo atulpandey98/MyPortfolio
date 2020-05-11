@@ -68,6 +68,7 @@ body {
     font-size: 18px;
 }
 
+
 .nav-links li {
     list-style: none;
 }
@@ -558,6 +559,16 @@ font-weight: 300;
     }
 }
 
+@media screen and (max-width : 500px) {
+    .nav-links ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #intro img {
+        width: 300px;
+    }
+}
 
 .nav-active {
     transform: translateX(0%);
