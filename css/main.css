@@ -55,7 +55,7 @@ body {
 
 .nav-links {
     display: flex;
-    width: 40%;
+    width: 40%;    
     justify-content: space-around;
 }
 
@@ -505,7 +505,7 @@ font-weight: 300;
 
 /* Projects box animation ends here */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .nav-links {
         display: flex;        
         justify-content: space-around;
