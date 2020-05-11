@@ -228,6 +228,7 @@ body {
     flex-wrap: wrap;
     margin-bottom: 100px;
     width: 100%;
+    justify-content: center;
 }
 
 .contact-links {    
@@ -238,7 +239,8 @@ body {
 }
 
 .contact-links span {
-    padding: 30px;        
+    padding: 30px;     
+    justify-content: center;   
 }
 
 .contact-links span:hover{
