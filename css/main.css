@@ -8,8 +8,7 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    /* background: #333;     */
+body {    
     display: flex;
     justify-content: center;
     flex-direction: column;      
@@ -20,6 +19,14 @@ body {
     background-size: cover;  
 }
 
+.paragraph {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px; 
+    font-weight: 100;
+    letter-spacing: 0.10em;
+    line-height: 1.6;
+}
 
 
 .logo {
@@ -36,8 +43,8 @@ body {
     align-items: center;
     min-height: 7vh;
     background-color: #596a72;
-    font-family: Sans-serif;
-    transition: top 0.3s;     
+    font-family: Helvetica, sans-serif, Arial;
+    transition: top 0.3s;         
 }
 
 .nav-links {
@@ -51,7 +58,7 @@ body {
     color: white;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .nav-links li {
@@ -249,16 +256,6 @@ body {
     background-image: url(../images/project-img3.jpg);
 }
 
-
-.paragraph {
-    color: #fff;
-    font-family: monospace;
-    font-size: 20px; 
-    font-weight: 100;
-    letter-spacing: 0.10em;
-    line-height: 1.6;
-}
-
 .headings-font h1{
     font-size: 2.5rem;
     font-family: 'Montserrat';
@@ -276,10 +273,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .skills-display h1{
     display: flex;
     flex-wrap: wrap;
 }
+
 .card {
     width: 6em;
     height: 5em;
@@ -291,7 +290,9 @@ body {
     align-items: center;
     box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21), 0 16px 28px rgba(0, 0, 0, 0.22);
     border: 1px solid #eee;    
+    border-radius: 5px;
 }
+
 .skills-card div:hover {
     background: rgb(224, 216, 189);
     transform: scale(1.3);
@@ -302,6 +303,7 @@ body {
     text-align: center;
     font-size: large;
     font-family: monospace;
+    color: #000;
 }
 
 .skills-card {
