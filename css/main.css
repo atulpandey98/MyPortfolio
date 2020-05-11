@@ -17,6 +17,7 @@ body {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
+    background-color: #2c2f31;
 }
 
 .preload * {
