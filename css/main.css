@@ -237,11 +237,13 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .contact-links span {
     padding: 30px;     
     justify-content: center;   
+    align-items: center;
 }
 
 .contact-links span:hover{
