@@ -37,4 +37,7 @@ const navSlide = () => {
 
 navSlide();
 
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
 

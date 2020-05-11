@@ -19,6 +19,12 @@ body {
     background-size: cover;  
 }
 
+.preload * {
+    transition: -webkit-transition none !important;
+    transition: -moz-transition none !important;
+    transition: -ms-transition none !important;
+    transition: -o-transition none !important;
+}
 .paragraph {
     color: #fff;
     font-family: monospace;
@@ -81,10 +87,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;        
-    margin: 80px auto; /* top and bottom 20 px, right and left auto */    
+    margin: 80px auto; /* top and bottom 20 px, right and left auto */        
 }
 
 .typewriter h1 {
+    
     color: #fff;
     font-size: 25px;
     font-family: monospace;
@@ -93,21 +100,23 @@ body {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 100px auto auto auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
+    animation:     
+        typing 3.5s steps(30, end) ,
+        blink-caret .5s step-end infinite;                
 }
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 100% 
+        }
+    
 }
     
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+    from, to { border-color: transparent}
+    50% { border-color: orange}
 }
 
 #intro p {
@@ -175,7 +184,7 @@ body {
 
 .blog-link {
     color: #fff;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;     
     letter-spacing: 0.10em;
@@ -186,7 +195,7 @@ body {
 
 .aboutme p {
     color: #fff;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;     
     letter-spacing: 0.10em;
     line-height: 1.2;   
@@ -226,12 +235,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    
 }
 
 .contact-links span {
-    padding: 30px;    
+    padding: 30px;        
 }
 
 .contact-links span:hover{
@@ -414,7 +421,7 @@ background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
     outline: 1px solid transparent;
     -webkit-perspective: inherit;
             perspective: inherit;
-    z-index: 2;
+    z-index: 2;    
 }
 
 .container-projects .back{
@@ -452,22 +459,29 @@ position: relative;
 }
 
 .front .inner p:after{
-content: '';
-width: 4rem;
-height: 2px;
-position: absolute;
-background: #C6D4DF;
-display: block;
-left: 0;
-right: 0;
-margin: 0 auto;
-bottom: -.75rem;
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
 }
 
 .front .inner span{
 color: rgba(255,255,255,0.7);
 font-family: 'Montserrat';
 font-weight: 300;
+}
+
+.back .inner a {
+    color: #fff;
+    font-family: monospace;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 64rem){
