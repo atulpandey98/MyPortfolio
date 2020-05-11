@@ -148,15 +148,14 @@ body {
 
 #blog a {
     color: yellowgreen;
-    font-family: helvetica;
-    font-style: italic;
+    font-family: helvetica;    
     text-decoration: none;
     text-transform: uppercase;
   }
   
 #blog a:hover {
     text-decoration: underline;
-  }
+}
   
 #blog  a:active {
     color: yellowgreen;
@@ -183,6 +182,8 @@ body {
     line-height: 1.2;   
     padding: 20px 80px;
     text-align: center;    
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
 }
 
 .blog-link {
@@ -198,7 +199,7 @@ body {
 
 .aboutme p {
     color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;     
     letter-spacing: 0.10em;
     line-height: 1.2;   
@@ -316,8 +317,9 @@ body {
 
 .card p {
     text-align: center;
-    font-size: large;
-    font-family: monospace;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
     color: #000;
 }
 
@@ -376,6 +378,7 @@ background-size: cover;
     border-radius: 10px;
     color: #fff;
     font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .back{
