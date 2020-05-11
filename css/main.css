@@ -57,6 +57,7 @@ body {
     display: flex;
     width: 40%;    
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-links a {
@@ -132,7 +133,7 @@ body {
 }
 
 #intro img {
-    /* width: 500px; */
+    
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px; /* future proofing */
@@ -556,6 +557,7 @@ font-weight: 300;
         
     }
 }
+
 
 .nav-active {
     transform: translateX(0%);
