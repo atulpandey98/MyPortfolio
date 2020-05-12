@@ -20,12 +20,6 @@ body {
     background-color: #2c2f31;
 }
 
-.preload * {
-    transition: -webkit-transition none !important;
-    transition: -moz-transition none !important;
-    transition: -ms-transition none !important;
-    transition: -o-transition none !important;
-}
 .paragraph {
     color: #fff;
     font-family: monospace;
@@ -51,7 +45,8 @@ body {
     min-height: 7vh;
     background-color: #596a72;
     font-family: Helvetica, sans-serif, Arial;
-    transition: top 0.3s;         
+    transition: top 0.3s;   
+    z-index: 9999;      
 }
 
 .nav-links {
@@ -576,6 +571,10 @@ font-weight: 300;
 
 .nav-active {
     transform: translateX(0%);
+}
+
+.nav-deactive {
+    transform: translateX(100%);
 }
 
 @keyframes navLinkFade {
