@@ -573,10 +573,6 @@ font-weight: 300;
     transform: translateX(0%);
 }
 
-.nav-deactive {
-    transform: translateX(100%);
-}
-
 @keyframes navLinkFade {
     from {
         opacity: 0;
