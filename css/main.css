@@ -294,7 +294,7 @@ body {
     width: 6em;
     height: 5em;
     margin: 2em;
-    background: rgb(209, 203, 184);
+    background: white;
     display: flex;    
     font-weight: bold;
     justify-content: center;
@@ -305,7 +305,7 @@ body {
 }
 
 .skills-card div:hover {
-    background: rgb(224, 216, 189);
+    background: white;
     transform: scale(1.3);
     transition: all .2s ease-in-out;
 }
