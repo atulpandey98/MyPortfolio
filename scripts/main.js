@@ -10,6 +10,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
+/* toggle navigation bar when clicked on burger. Close the navigation bar if opened by clicking anywhere. */
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -18,34 +19,31 @@ const navSlide = () => {
 
   //Toggle Nav
   burger.addEventListener('click', () => {    
-      nav.classList.toggle('nav-active');
+    nav.classList.toggle('nav-active');
 
-      //Animate Links
-      navLinks.forEach((link, index) => {
-        if(link.style.animation) {
-          link.style.animation = ``;
-        }
-        else {
-          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.8}s`;
-        }
-      });
-
-      //Burger Animation
-      burger.classList.toggle('toggle');  
+    //Animate Links
+    navLinks.forEach((link, index) => {
+      if(link.style.animation) {
+        link.style.animation = ``;
+      }
+      else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.8}s`;
+      }
     });
 
-    
+    //Burger Animation
+    burger.classList.toggle('toggle');  
+  });
 
   span.addEventListener('click', () => {
     nav.classList.toggle('nav-active',false);
     navLinks.forEach((link, index) => {        
-      link.style.animation = ``;        
+        link.style.animation = ``;        
     });
 
     //Burger Animation
     burger.classList.toggle('toggle',false);  
   });
-
 }
 
 navSlide();
