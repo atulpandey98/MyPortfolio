@@ -88,8 +88,7 @@ body {
     margin: 80px auto; /* top and bottom 20 px, right and left auto */        
 }
 
-.typewriter h1 {
-    
+.typewriter h1 {    
     color: #fff;
     font-size: 25px;
     font-family: monospace;
@@ -106,9 +105,7 @@ body {
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% 
-        }
-    
+    to { width: 100% }
 }
     
 /* The typewriter cursor effect */
@@ -129,8 +126,7 @@ body {
     line-height: 2;
 }
 
-#intro img {
-    
+#intro img {    
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px; /* future proofing */
@@ -192,6 +188,14 @@ body {
     text-align: center;
 }
 
+.aboutme {
+    display: flex;        
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;          
+}
+
 .aboutme p {
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -202,19 +206,12 @@ body {
     text-align: center;
 }
 
- .aboutme {
-    display: flex;        
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;          
- }
 
- .aboutme div {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;     
- }
+.aboutme div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;     
+}
 
 .answer {
     color: yellowgreen;
@@ -255,7 +252,6 @@ body {
    transition: transform 0.5s ease-out;
    
 }
-
 
 .project-img1 {
     background-image: url(../images/project-img1.jpg);
@@ -584,6 +580,8 @@ font-weight: 300;
     }
 }
 
+/* burger animation starts here*/
+
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -595,3 +593,5 @@ font-weight: 300;
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, 6px);
 }
+
+/* burger animation ends here*/
