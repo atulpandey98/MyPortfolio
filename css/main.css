@@ -88,6 +88,7 @@ body {
     margin: 80px auto; /* top and bottom 20 px, right and left auto */        
 }
 
+
 .typewriter h1 {    
     color: #fff;
     font-size: 25px;
@@ -97,9 +98,15 @@ body {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 100px auto auto auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation:     
+
+    
+    animation:           
         typing 3.5s steps(30, end) ,
         blink-caret .5s step-end infinite;                
+        animation-delay: 50ms;
+        -webkit-animation-delay: 50ms;
+        -moz-animation-delay: 50ms;
+        -o-animation-delay: 50ms;    
 }
 
 /* The typing effect */
@@ -129,8 +136,8 @@ body {
 .intro img {    
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
-    border-radius: 100px; /* future proofing */
-    -khtml-border-radius: 100px; /* for old Konqueror browsers */
+    border-radius: 100px; 
+    -khtml-border-radius: 100px; 
 }
 
 .profile-desc {
