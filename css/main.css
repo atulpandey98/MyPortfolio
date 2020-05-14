@@ -81,7 +81,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.container-typewriter {    
+.container-typewriter {        
     display: flex;
     align-items: center;
     justify-content: center;        
@@ -114,19 +114,19 @@ body {
     50% { border-color: orange}
 }
 
-#intro p {
+.intro p {
    padding: 120px 80px;
    text-align: center;
 }
 
-#intro p:first-letter {    
+.intro p:first-letter {    
     margin:3px;
     color:rgb(226, 220, 220);
     font-size:200%;
     line-height: 2;
 }
 
-#intro img {    
+.intro img {    
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px; /* future proofing */
@@ -486,19 +486,19 @@ font-weight: 300;
     text-decoration: none;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 72rem){
 .col{
     width: calc(33.333333% - 2rem);
 }
 }
 
-@media screen and (max-width: 48rem){
+@media screen and (max-width: 54rem){
 .col{
     width: calc(50% - 2rem);
 }
 }
 
-@media screen and (max-width: 32rem){
+@media screen and (max-width: 36rem){
 .col{
     width: 100%;
     margin: 0 0 2rem 0;
@@ -519,11 +519,12 @@ font-weight: 300;
     body {
         overflow-x: hidden;
     }
+
     .nav-links {
         position: absolute;
         right : 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 94vh;
+        top: 6vh;        
         background-color: #596a72;
         display: flex;
         flex-direction: column;
@@ -549,9 +550,16 @@ font-weight: 300;
     }
 
     .aboutme img {
-        width: 100%;
-        
+        width: 100%;        
     }
+
+    .contact-links span {
+        padding: 15px;        
+    }    
+
+    .contact-links img {
+        width: 50px;
+    }        
 }
 
 @media screen and (max-width : 500px) {
@@ -560,7 +568,7 @@ font-weight: 300;
         align-items: center;
     }
 
-    #intro img {
+    .intro img {
         width: 300px;
     }
 }
