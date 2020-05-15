@@ -773,6 +773,10 @@ font-weight: 300;
         width: 300px;
     }
 
+    .typewriter h1 {        
+        font-size: 13px;
+    }
+
     .intro {
         margin-top: 100px;
     }    
