@@ -260,6 +260,7 @@ body {
 .timeline h1,
 .timeline ul li .content h2 {
   text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
+  color: white;
 }
 
 .timeline ul {  
