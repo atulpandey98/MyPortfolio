@@ -8,6 +8,30 @@ html {
     box-sizing: border-box;
 }
 
+.loader { 
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #444444; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite; 
+} 
+  
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+} 
+  
+.loader-center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+} 
+
 body {    
     display: flex;
     justify-content: center;
@@ -121,9 +145,24 @@ body {
     50% { border-color: orange}
 }
 
-.intro p {
-   padding: 120px 80px;
+
+.intro {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    column-gap: 150px;
+    
+}
+
+.intro p {   
    text-align: center;
+   font-size: 24px;
+   margin-right: 50px;
+   margin-left: 50px;
+   
 }
 
 .intro p:first-letter {    
@@ -137,11 +176,7 @@ body {
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px; 
-    -khtml-border-radius: 100px; 
-}
-
-.profile-desc {
-    margin-left: 60px;
+    -khtml-border-radius: 100px;     
 }
 
 #blog a {
@@ -520,6 +555,15 @@ font-weight: 300;
         justify-content: space-around;
         width: 70%;
     }
+
+    .intro img {
+        margin-bottom: 100px;
+    }   
+
+    .intro p {
+        font-size: 18px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -566,7 +610,9 @@ font-weight: 300;
 
     .contact-links img {
         width: 50px;
-    }        
+    }         
+
+    
 }
 
 @media screen and (max-width : 500px) {
@@ -578,6 +624,11 @@ font-weight: 300;
     .intro img {
         width: 300px;
     }
+
+    .intro {
+        margin-top: 100px;
+    }    
+    
 }
 
 .nav-active {
