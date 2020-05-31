@@ -14,7 +14,7 @@ document.onreadystatechange = function () {
 
 var messages = [
   "I am a Full Stack Developer.",
-  "Also, an engineering student.",
+  "I also do Competitive Programming.",
   "Hi there. Welcome to my portfolio.",
 ];
 var rank = 0;
