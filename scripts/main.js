@@ -13,8 +13,8 @@ document.onreadystatechange = function () {
 // typewriter effect on loop
 
 var messages = [
-  "I am to be a software engineer.",
-  "I love to build things (just like this one).",
+  "I love to build things.",
+  "Have a look around.Enjoy. ",
   "Hi there. Welcome to my portfolio.",
 ];
 var rank = 0;
