@@ -14,7 +14,7 @@ document.onreadystatechange = function () {
 
 var messages = [
   "I love to build things.",
-  "Have a look around.Enjoy. ",
+  "Have a good look around.",
   "Hi there. Welcome to my portfolio.",
 ];
 var rank = 0;
