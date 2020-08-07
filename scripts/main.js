@@ -44,13 +44,13 @@ function changeTxt(e) {
 
 let scrollLock = false;
 
-function getWindowSize() {  
-  var width = document.documentElement.clientWidth;  
+function getWindowSize() {
+  var width = document.documentElement.clientWidth;
   if (width > 900) {
     scrollAllowed = true;
   } else {
     scrollAllowed = false;
-  }  
+  }
 }
 
 window.addEventListener("resize", getWindowSize);
@@ -62,7 +62,7 @@ getWindowSize();
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  if(scrollAllowed){
+  if (scrollAllowed) {
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0";
     } else {
@@ -93,7 +93,7 @@ const navSlide = () => {
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${
           index / 7 + 0.8
-        }s`;
+          }s`;
       }
     });
 
@@ -111,5 +111,64 @@ const navSlide = () => {
     burger.classList.toggle("toggle", false);
   });
 };
+
+$(".js--wp-1").waypoint(
+  function (direction) {
+    $(".js--wp-1").addClass("animate__animated animate__fadeInLeft");
+    $(".js--wp-1").removeClass("hidden");
+  },
+  {
+    offset: "50%",
+  }
+);
+
+$(".js--wp-2").waypoint(
+  function (direction) {
+    $(".js--wp-2").addClass("animate__animated animate__fadeInRight");
+    $(".js--wp-2").removeClass("hidden");
+  },
+  {
+    offset: "50%",
+  }
+);
+
+$(".js--wp-3").waypoint(
+  function (direction) {
+    $(".js--wp-3").addClass("animate__animated animate__zoomIn");
+    $(".js--wp-3").removeClass("hidden");
+  },
+  {
+    offset: "60%",
+  }
+);
+
+$(".js--wp-4").waypoint(
+  function (direction) {
+    $(".js--wp-4").addClass("animate__animated animate__flipInX");
+    $(".js--wp-4").removeClass("hidden");
+  },
+  {
+    offset: "60%",
+  }
+);
+
+$(".js--wp-5-1").waypoint(
+  function (direction) {
+    $(".js--wp-5-1").addClass("animate__animated animate__slideInLeft");
+    $(".js--wp-5-1").removeClass("hidden");
+  },
+  {
+    offset: "60%",
+  }
+);
+$(".js--wp-5-2").waypoint(
+  function (direction) {
+    $(".js--wp-5-2").addClass("animate__animated animate__slideInRight");
+    $(".js--wp-5-2").removeClass("hidden");
+  },
+  {
+    offset: "35%",
+  }
+);
 
 navSlide();
