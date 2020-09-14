@@ -138,7 +138,7 @@ $(".js--wp-3").waypoint(
     $(".js--wp-3").removeClass("hidden");
   },
   {
-    offset: "60%",
+    offset: "50%",
   }
 );
 
@@ -148,7 +148,7 @@ $(".js--wp-4").waypoint(
     $(".js--wp-4").removeClass("hidden");
   },
   {
-    offset: "60%",
+    offset: "50%",
   }
 );
 
@@ -158,7 +158,7 @@ $(".js--wp-5-1").waypoint(
     $(".js--wp-5-1").removeClass("hidden");
   },
   {
-    offset: "60%",
+    offset: "50%",
   }
 );
 $(".js--wp-5-2").waypoint(
