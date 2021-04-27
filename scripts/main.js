@@ -33,7 +33,7 @@ function changeTxt(e) {
   _h1 = this.getElementsByTagName("h1")[0];
   _h1.style.webkitAnimation = "none"; // set element animation to none
   setTimeout(function () {
-    // you surely want a delay before the next message appears
+    // for delay before the next message appears
     _h1.innerHTML = messages[rank];
     var speed = 3.5; // adjust the speed (3.5 is the original speed, 20 is the original string length
     _h1.style.webkitAnimation =
